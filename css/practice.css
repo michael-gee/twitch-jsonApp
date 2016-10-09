@@ -1,0 +1,182 @@
+/* BODY */
+body {
+  background-color: #6441A5;
+  font-family: arial, sans-serif;
+}
+
+/* TWITCH-BOX DIV */
+.twitch-box {
+  max-width: 750px;
+  background-color: white;
+  border-radius: .5%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.twitch-box img {
+  max-width: 100%;
+}
+
+/* CONTENT DIV */
+.content {
+  max-width: 650px;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+/* BUTTONS */
+.status-buttons {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #6441A5;
+  border-radius: 3%;
+  margin: 0px 15px 0px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* INDIVIDUAL BUTTONS */
+#all-button{
+  padding-right: 40px;
+  padding-left: 40px;
+}
+#online-button{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+#offline-button{
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+/* BUTTON MEDIA QUERIES TO MAKE RESPONSIVE */
+@media(max-width:460px) {
+  .button{
+    margin: 0;
+  }
+}
+
+@media(max-width:370px) {
+  .status-buttons {
+    margin-top: 25px;
+  }  
+  #all-button{
+  padding-right: 25px;
+  padding-left: 25px;
+  }
+  #online-button{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #offline-button{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+/* STREAMERS (RESULTS) DIV */
+.online {
+  margin-top: 35px;
+}
+
+/* ONLINE USERS */
+.online-user {
+  background-color: white;
+  border-radius: 1%;
+  width: 95%;
+  padding: 10px;
+  margin: 5px;
+  overflow: hidden;
+  color: #6441A5;
+}
+
+.online-user:hover {
+  background-color: #6441A5;
+  cursor: pointer;
+  color: white;
+}
+
+/* OFFLINE USERS */
+.offline-user {
+  background-color: lightgrey;
+  border-radius: 1%;
+  width: 95%;
+  overflow: hidden;
+  padding: 10px;
+  margin: 5px;
+  color: #6441A5;
+}
+
+.offline-user:hover {
+  background-color: #6441A5;
+  cursor: pointer;
+  color: white;
+}
+
+.streamer-logo img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* ONLINE/OFFLINE DIV MEDIA QUERIES */
+@media(max-width: 785px) {
+  .online-user {
+    padding: 2px;
+    margin: 0;
+  }
+  
+  .offline-user {
+    padding: 2px;
+    margin: 0;
+  }
+}
+
+/* INDIVIIDUAL RESULT DIVS */
+.streamer-logo {
+  float: left;
+  width: 20%;
+}
+
+.streamer-name {
+  float: left;
+  text-align: center;
+  padding-top: 30px;
+  width: 35%;
+}
+
+.streamer-status {
+  float: left;
+  text-align: center;
+  width: 45%;
+  padding-top: 10px;
+}
+
+/* REMOVE IMAGE AND ADJUST FONT WHEN WINDOW IS RESIZED TO 590PX */
+@media(max-width: 590px) {
+
+  .streamer-logo {
+    display:none;
+  }
+  
+  .streamer-name {
+    width: 30%;
+    text-align: left;
+    padding-top: 20px;
+  }
+  
+  .streamer-status {
+    width: 70%;
+    font-size: .8em;
+  }
+  
+}
