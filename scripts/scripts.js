@@ -89,7 +89,7 @@ function displayOnline(channelData) {
 
   //Streamer Status Div
   resultHTML += "<div class='streamer-status'>";
-  resultHTML += "<p class='online-stream-status'>" + channelData.status + "</p>";
+  resultHTML += "<p class='online-stream-status' style='padding-top: 15px'>" + channelData.status + "</p>";
   resultHTML += "</div>";
  
   resultHTML += "</div>";
